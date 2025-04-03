@@ -1,0 +1,135 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: #550076;
+    margin: 0;
+    padding: 0;
+}
+
+header .logo {
+    text-align: center;
+    border: none; 
+    padding: 0;
+    font-size: 20px;
+    color: #550076;
+    background-color: #D952EB;
+}
+
+.primeiro-menu li {
+    list-style: none;
+    padding: 10px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    color: #D952EB;
+    font-size: 20px;
+    border: 2px solid #D952EB;
+}
+
+.cards img {
+    width: 200px; 
+    height: 160px;
+    padding: 3px;
+    border: 5px solid #D952EB;
+}
+
+.cards {
+    text-align: right;
+}
+
+.carrossel img {
+    width: 200px; 
+    height: 160px;
+    padding: 3px;
+    border: 5px solid #D952EB;
+}
+
+.carrossel {
+    text-align: center;
+}
+
+.mini-carrossel img {
+    width: 200px; 
+    height: 160px;
+    padding: 3px;
+    border: 5px solid #D952EB;
+}
+
+.mini-carrossel {
+    text-align: left;
+}
+
+.central-conhecimento div {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column; 
+    color: #D952EB;
+    padding: 10px;
+    
+}
+
+.central-conhecimento input, .central-conhecimento button {
+  margin-top: 10px;
+  color: #550076;
+  border: 2px solid #D952EB;
+  border-radius: 5px;
+}
+
+.bio {
+    color:#550076;
+    text-align: left;
+    padding: 10px;
+    background-color: #D952EB;
+}
+
+.estudos {
+    display: flex;
+    color: #D952EB;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.estudos input, .estudos button {
+    margin-top: 10px;
+    color: #550076;
+    border: 2px solid #D952EB;
+    border-radius: 5px;
+}
+
+.rodape {
+    text-align: center;
+    border: none; 
+    padding: 0;
+    color:#550076;
+    background-color: #D952EB;
+}
+
+@media (max-width: 768px) {
+    .primeiro-menu li {
+        display: block;
+        margin-right: 0; 
+        margin-left: 0;
+    }
+
+    .cards img, .carrossel img, .mini-carrossel img {
+        width: 100%;
+        height: auto;
+    }
+
+    .cards, .carrossel, .mini-carrossel{
+        text-align: center;
+    }
+
+    .central-conhecimento div, .estudos{
+        padding: 5px;
+    }
+
+    .bio{
+        padding: 5px;
+    }
+}
